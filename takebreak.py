@@ -16,7 +16,7 @@ def OpenInBrowser(url):
 def run(job):
     eval(job)
 
-# run a job with with a timeout by seconds
+# run a job with a timeout by seconds
 
 
 def operation(job, timer):
@@ -36,7 +36,7 @@ def ScheduleJob(job, time, repeat=False):
 
 # -------------------------Main app body--------------------------------
 
-url = 'https://www.youtube.com/watch?v=ejvpVhvKesM'
+url = 'https://www.youtube.com/watch?v=JGwWNGJdvx8'
 
 # 2h
 timer = 7200
