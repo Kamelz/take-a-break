@@ -1,5 +1,6 @@
-import time
 import webbrowser
+import time
+
 
 #  ------------------------- App functions --------------------------------
 
@@ -20,17 +21,20 @@ def run(job):
 
 
 def operation(job, timer):
-    run(job)
     time.sleep(timer)
+    run(job)
+
 
 # schedule repeatativ or nonrepetativ job with a timeout by seconds
 
 
-def ScheduleJob(job, time, repeat=False):
+def ScheduleJob(job, timer, repeat=False):
     if(repeat):
         while True:
+            print(time.ctime())
             operation(job, timer)
     else:
+        print(time.ctime())
         operation(job, timer)
 
 
@@ -39,7 +43,8 @@ def ScheduleJob(job, time, repeat=False):
 url = 'https://www.youtube.com/watch?v=JGwWNGJdvx8'
 
 # 2h
-timer = 7200
+# timer = 7200
+timer = 6
 
 job = "OpenInBrowser('" + url + "')"
 
