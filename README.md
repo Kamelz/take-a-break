@@ -1,2 +1,2 @@
 # take-a-break
-A python script that perform a cretin job within a specified time.
+A python script that schedules a job to run after a specific time.
